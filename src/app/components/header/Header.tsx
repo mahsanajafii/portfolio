@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Logo from "/public/pic/logoportfolio.png";
+import Logo from "/public/images/logoportfolio.png";
 
 const Header = () => {
   return (
@@ -7,16 +7,16 @@ const Header = () => {
 
       <Image src={Logo} alt="logo" width={90} height={40}/>
       <ul className="w-1/2 h-fit flex justify-around items-center gap-5">
-        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold">
+        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold hover:animate-bounce">
           Home
         </li>
-        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold">
+        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold hover:animate-bounce">
           About Me
         </li>
-        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold">
+        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold hover:animate-bounce">
           Skills
         </li>
-        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold">
+        <li className="cursor-pointer p-2 rounded-full hover:font-extrabold hover:animate-bounce">
           Projects
         </li>
       </ul>

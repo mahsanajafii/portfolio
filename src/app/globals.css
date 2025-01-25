@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background:#11071F;
-  --foreground: #FFFFFF;
+  --background: #11071f;
+  --foreground: #ffffff;
 }
-
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Preahvihear,Poppins;
+  font-family: Preahvihear, Poppins;
 }
 @font-face {
   font-family: Poppins;
@@ -24,9 +23,21 @@ body {
 /* .small-radial-gradient {  
   background: radial-gradient(circle, rgba(256,256,256,1) 18%, rgba(26,26,26,0) 60%);  
 }  */
-.small-radial-gradient {  
-  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(26, 26, 26, 0) 80%);  
-} 
-.medium-radial-gradient {  
-  background: radial-gradient( rgba(46.3, 23.5, 67.5,1) 0%, rgba(19.6,5.9,52.2,0) 100%);  
-} 
+.small-radial-gradient {
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(26, 26, 26, 0) 80%
+  );
+}
+.medium-radial-gradient {
+  background: radial-gradient(
+    circle at 50% 50%,
+    #763cac 0%,
+    #320F85 100%
+    );
+  border-radius: 50%; 
+  /* filter: blur(1px);   */
+
+  box-shadow: inset 10px 10px 30px rgba(7, 0.4, 23,.8);  
+}
