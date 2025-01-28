@@ -11,8 +11,8 @@ import CssLogo from "../../../../public/images/css.svg"
 
 const Skills = () => {
   return (
-<div className="flex flex-col w-full gap-3 justify-center items-center">
-        <p className="w-full h-fit text-4xl animate-bounce">Skills:</p>
+<div className="flex flex-col w-full gap-20 justify-center items-center" id="skills">
+        <p className="w-full h-fit text-6xl justify-center items-center flex">Skills:</p>
         <div className="w-1/2 h-auto flex overflow-hidden flex-wrap gap-5 justify-center items-center ">
         <span className="flex medium-radial-gradient justify-center items-center p-1 my-2 w-24 h-24 rounded-full  cursor-pointer ease-in hover:animate-pulse ">
         <span className="flex justify-center items-center p-2 w-full h-full rounded-full bg-[#251C31]">

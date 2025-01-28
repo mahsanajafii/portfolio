@@ -31,14 +31,60 @@ body {
   );
 }
 .medium-radial-gradient {
-  background: radial-gradient(
-    circle at 50% 50%,
-    #763cac 0%,
-    #320F85 100%
-    );
-  border-radius: 50%; 
-  /* filter: blur(1px);   */
+  background: radial-gradient(circle at 50% 50%, #763cac 0%, #320f85 100%);
+  border-radius: 50%;
 
-  box-shadow: inset 10px 10px 30px rgba(7, 0.4, 23,.8);  
+  box-shadow: inset 10px 10px 30px rgba(7, 0.4, 23, 0.8);
 }
 
+.floating-xy-odd {
+  animation: floating_xy_odd 4s ease-in-out infinite
+}
+
+@keyframes floating_xy_odd {
+  0% {
+      transform: translate(0)
+  }
+
+  25% {
+      transform: translate(1px,-1px)
+  }
+
+  50% {
+      transform: translate(-1px,1px)
+  }
+
+  75% {
+      transform: translate(1px,1px)
+  }
+
+  to {
+      transform: translate(0)
+  }
+}
+
+.floating-xy-even {
+  animation: floating_xy_even 4s ease-in-out infinite
+}
+
+@keyframes floating_xy_even {
+  0% {
+      transform: translate(0)
+  }
+
+  25% {
+      transform: translate(-2.7px,2.7px)
+  }
+
+  50% {
+      transform: translate(2.7px,-2.7px)
+  }
+
+  75% {
+      transform: translate(2.7px,2.7px)
+  }
+
+  to {
+      transform: translate(0)
+  }
+}

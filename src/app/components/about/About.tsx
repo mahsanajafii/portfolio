@@ -4,7 +4,7 @@ import Pic from "../../../../public/images/mypic.png";
 const About = () => {
   return (
     <>
-<div className="w-full h-full flex justify-center items-center gap-5">
+<div className="w-full h-full flex justify-center items-center gap-5" id="about">
         <div className="h-72 w-72 rounded-full border-none shadow-2xl shadow-[#434343] small-radial-gradient flex justify-center items-center">
           <Image src={Pic} alt="my pic" width={200} height={200} />
         </div>
