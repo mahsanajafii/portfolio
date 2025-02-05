@@ -20,23 +20,25 @@ body {
   font-family: Preahvihear;
   src: url("/public/fonts/Preahvihear-Regular.ttf");
 }
-/* .small-radial-gradient {  
-  background: radial-gradient(circle, rgba(256,256,256,1) 18%, rgba(26,26,26,0) 60%);  
-}  */
-.small-radial-gradient {
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(26, 26, 26, 0) 80%
-  );
-}
+
 .medium-radial-gradient {
   background: radial-gradient(circle at 50% 50%, #763cac 0%, #320f85 100%);
   border-radius: 50%;
 
   box-shadow: inset 10px 10px 30px rgba(7, 0.4, 23, 0.8);
 }
-
+.linear-gradient-bg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* width: 100%; عرض بیضی */
+  /* height: 100%; ارتفاع بیضی */
+  background: linear-gradient(45deg, #763CAC, #320F85); /* گرادیانت */
+  border-radius: 50%; /* ایجاد شکل بیضی */
+  filter: blur(80px); /* افکت محو کردن */
+  z-index: -1; 
+}
 .floating-xy-odd {
   animation: floating_xy_odd 4s ease-in-out infinite
 }
